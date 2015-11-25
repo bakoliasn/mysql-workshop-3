@@ -1,0 +1,8 @@
+mysql> select subtype, count(subtype) from Phone join Entry on Entry.id=Phone.entryId where Entry.birthday between "1950-10-01" and "1960-10-01" group by subtype;
++----------+----------------+
+| subtype  | count(subtype) |
++----------+----------------+
+| landline |            170 |
+| cellular |            138 |
+| fax      |            134 |
++----------+----------------+
