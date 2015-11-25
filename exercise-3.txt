@@ -1,0 +1,61 @@
+ select lower(country), count(Country) from Address group by country order by count(country) desc;
+ +----------------------------------------------+----------------+
+| lower(country)                               | count(Country) |
++----------------------------------------------+----------------+
+| mozambique                                   |             18 |
+| saint helena, ascension and tristan da cunha |             16 |
+| andorra                                      |             15 |
+| canada                                       |             15 |
+| argentina                                    |             15 |
+| lebanon                                      |             15 |
+| wallis and futuna                            |             15 |
+| curaçao                                      |             15 |
+| thailand                                     |             15 |
+| united states minor outlying islands         |             15 |
+| brazil                                       |             14 |
+| congo, the democratic republic of the        |             14 |
+| dominica                                     |             14 |
+| united kingdom (great britain)               |             14 |
+| sri lanka                                    |             14 |
+| ethiopia                                     |             14 |
+| united arab emirates                         |             14 |
+| netherlands                                  |             14 |
+| lithuania                                    |             13 |
+| cook islands                                 |             13 |
+| paraguay                                     |              6 |
+| bolivia                                      |              6 |
+| togo                                         |              6 |
+| somalia                                      |              6 |
+| burkina faso                                 |              6 |
+| portugal                                     |              6 |
+| viet nam                                     |              6 |
+| malawi                                       |              6 |
+| libya                                        |              6 |
+| romania                                      |              6 |
+| china                                        |              6 |
+| svalbard and jan mayen islands               |              6 |
+| angola                                       |              6 |
+| spain                                        |              6 |
+| french guiana                                |              6 |
+| namibia                                      |              6 |
+| laos                                         |              6 |
+| sudan                                        |              6 |
+| trinidad and tobago                          |              5 |
+| korea, south                                 |              5 |
+| sweden                                       |              5 |
+| palestine, state of                          |              5 |
+| liechtenstein                                |              5 |
+| nauru                                        |              5 |
+| nepal                                        |              5 |
+| hong kong                                    |              5 |
+| samoa                                        |              5 |
+| monaco                                       |              5 |
+| montenegro                                   |              5 |
+| haiti                                        |              5 |
+| jamaica                                      |              4 |
+| saint vincent and the grenadines             |              3 |
+| mauritius                                    |              3 |
+| saudi arabia                                 |              3 |
+| iceland                                      |              3 |
+| niger                                        |              2 |
++----------------------------------------------+----------------+
