@@ -1,0 +1,6 @@
+create table account (id int auto_increment primary key, email varchar(255), password varchar(40), createdOn datetime, modifiedOn datetime);
+create table addressBook (id int auto_increment primary key, account_id int, name varchar(255), createdOn datetime, modifiedOn datetime);
+create table entry (id int auto_increment primary key, addressBook_id int, firstName varchar(255), lastName varchar(255), birthday date, type enum("phone", "address", "electronicMail"));
+create table phone (id int auto_increment primary key, entryId int, type enum("home", "work", "other"), subtype enum("cellphone", "landline", "faxmachine"), content varchar(255));
+create table address (id int auto_increment primary key, entryId int, type enum("home", "work", "other"), addressLine1 varchar(255), addressLine varchar(255), city varchar(255), province varchar(128), country varchar(128), postalCode varchar(10));
+create table electronicMail (id int auto_increment primary key, entryId int, type enum("home", "work", "other"), content varchar(255));
