@@ -1,0 +1,2 @@
+mysql> select firstName from Entry join AddressBook on AddressBook.id=Entry.addressBook_id;
+Empty set (0.00 sec)
